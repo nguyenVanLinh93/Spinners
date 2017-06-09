@@ -25,14 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner spinner1=(Spinner)findViewById(R.id.spinner1);
-        Spinner spinner2=(Spinner)findViewById(R.id.spinner2);
-        mTextView=(TextView)findViewById(R.id.textView);
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        mTextView = (TextView) findViewById(R.id.textView);
 
         spinner1.setOnItemSelectedListener(new SetColor());
 
-        String[] stringColor={"Red", "Yellow", "Blue", "Green"};
-        ArrayAdapter spinner2Adapter=new ArrayAdapter(
+        String[] stringColor = {"Red", "Yellow", "Blue", "Green"};
+        ArrayAdapter spinner2Adapter = new ArrayAdapter(
                 this,
                 android.R.layout.simple_spinner_item,
                 stringColor
@@ -48,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            if (isFirst){
-                isFirst=false;
+            if (isFirst) {
+                isFirst = false;
             } else {
-                String color=parent.getItemAtPosition(position).toString();
-                switch (color){
+                String color = parent.getItemAtPosition(position).toString();
+                switch (color) {
                     case "Red":
                         mTextView.setBackgroundColor(Color.RED);
                         break;
