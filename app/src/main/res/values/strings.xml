@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spinners</string>
+    
+    <string name="spinner_prompt">Choise Color (choices from XML)</string>
+    <string-array name="spinner_entries">
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>
